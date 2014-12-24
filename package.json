@@ -1,17 +1,21 @@
 {
-    "name": "cuipp"
-  , "keywords": ["Cisco"]
-  , "version": "0.0.1"
-  , "dependencies": {
-      "xmlbuilder": "latest"
-  }
-  , "devDependencies": {
+  "name": "cuipp", 
+  "keywords": ["Cisco"],
+  "version": "0.0.1",
+  "main": "./lib/cuipp",
+  "dependencies": {
+    "xmlbuilder": "latest"
+  },
+  "devDependencies": {
       "express": "latest"
-  }
-
-  , "author": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivansanchez/node-cuipp.git"
+  },
+  "author": {
     "name": "Iván Sánchez Ortega",
     "email": "ivan@sanchezortega.es"
-  }
-  , "license": "Beerware"
+  },
+  "license": "Beerware"
 }

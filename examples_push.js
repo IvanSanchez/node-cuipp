@@ -1,6 +1,7 @@
 
 
-// These examples imply node.js initiating the communication.
+// These examples imply node.js initiating the communication, pushing
+//   the payloads to the phone.
 // Note how all payloads are wrapped in a cuipp.send() call.
 
 var cuipp = require('./lib/cuipp');
@@ -16,7 +17,7 @@ function errorHandler(err,result) {
 }
 
 
-// Unlock the phone (0, inmediatly) and play a file (file must be at phone's TFTP server) (2, only if the phone is idle).
+// Unlock the phone (0, immediatly) and play a file (file must be at phone's TFTP server) (2, only if the phone is idle).
 cuipp.send(testPhone, 
 	cuipp.execute({'Device:Unlock':0,'Play:alert.wav':2 }),
 	errorHandler
@@ -61,7 +62,7 @@ cuipp.send(testPhone,
 
 // Display some text
 cuipp.send(testPhone, 
-	cuipp.text(testPhone,{title:'Alert!'},'Something is wrong!'),
+	cuipp.text({title:'Alert!'},'Something is wrong!'),
 	errorHandler
 );
 
