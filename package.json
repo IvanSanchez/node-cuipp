@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "main": "./lib/cuipp",
   "dependencies": {
-    "xmlbuilder": "latest"
+    "xmlbuilder": "latest",
+	"node-xml-lite": "latest"
   },
   "devDependencies": {
       "express": "latest"
