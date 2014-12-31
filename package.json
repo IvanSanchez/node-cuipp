@@ -1,11 +1,11 @@
 {
   "name": "cuipp", 
   "keywords": ["Cisco"],
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "./lib/cuipp",
   "dependencies": {
     "xmlbuilder": "latest",
-	"node-xml-lite": "latest"
+    "node-xml-lite": "latest"
   },
   "devDependencies": {
       "express": "latest"
