@@ -17,7 +17,10 @@ function errorHandler(err,result) {
 }
 
 
-// Unlock the phone (0, immediatly) and play a file (file must be at phone's TFTP server) (2, only if the phone is idle).
+// Unlock the phone (0, immediatly) and play a file (file must be
+//   at phone's TFTP server) (2, only if the phone is idle).
+// This is the only command that can expect a return value from
+//   the phone (success or failure of each URI)
 cuipp.send(testPhone, 
 	cuipp.execute({'Device:Unlock':0,'Play:alert.wav':2 }),
 	errorHandler
